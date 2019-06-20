@@ -1,0 +1,340 @@
+{
+  "allChangesIncluded": true,
+  "changeCounts": {
+    "Edit": 28
+  },
+  "changes": [
+    {
+      "item": {
+        "objectId": "fe522625e79a696fd7539c5b0f31442174b259b2",
+        "originalObjectId": "02b6b2330a720d136fe859934f01657683e9639b",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Database.App1",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Database.App1?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "d09073ced1d9f4e64ae136892fd8930c3eafc0d9",
+        "originalObjectId": "94817287c14e42148b480893e8f8595b3b400270",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Database.App1/src",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Database.App1%2Fsrc?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "b66f98298c1a6d309969287c68e5c5233fc44e67",
+        "originalObjectId": "745f299b171abef0c9f37e74b22f4ed8eb1228f7",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Database.App1/src/App1.DotCom",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Database.App1%2Fsrc%2FApp1.DotCom?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "70d14c80a2e01a114b980721e1e68889e0d958b5",
+        "originalObjectId": "a881386acbb8cc55f76058d2033a0712f60ff31d",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Database.App1/src/App1.DotCom/dbo",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Database.App1%2Fsrc%2FApp1.DotCom%2Fdbo?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "b27cdce32200d801d2480cca998939342d0f11ae",
+        "originalObjectId": "f34f76c70d137102beb5b5994b995459fb8a69ab",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Database.App1/src/App1.DotCom/dbo/Stored Procedures",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Database.App1%2Fsrc%2FApp1.DotCom%2Fdbo%2FStored%20Procedures?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "fe5cff740ce94e623426cd7c1d110e2ced65c9b5",
+        "originalObjectId": "bbefbd858f5d99a6ec2c42fb4a3d6089634da864",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Database.App1/src/App1.DotCom/dbo/Stored Procedures/pr_GetVoucherSearchDetails.sql",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Database.App1%2Fsrc%2FApp1.DotCom%2Fdbo%2FStored%20Procedures%2Fpr_GetVoucherSearchDetails.sql?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "b9d470c5f20f2f09de306148d8f3e455bd6956ed",
+        "originalObjectId": "a6594798dc6e4dbf6c8dcf2ac0f5a0bef94482de",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "66b553b1fa9d316b64513bef83878bb983a1ace4",
+        "originalObjectId": "bf988ceaac086a61d432517fc253e135afc1f2e9",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "55c0fd37fdd08164fdc95e9069742e3a2bcdd794",
+        "originalObjectId": "1f5ea07400a175a46467a35c46b720581ec80841",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "73c89ed63311c5edef6a4e258c851e03b7df1eca",
+        "originalObjectId": "f575878658a8207c5e671d7ac1a1dc6565ab91c1",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Data",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Data?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "64ea5528e788c6d886e1a13340792b3227a30efa",
+        "originalObjectId": "16300df65c0ef50e871b6188fe454c045f386a3e",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Data/Room",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Data%2FRoom?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "f147a4fa14a1bb92b62507a8710258168da14b8f",
+        "originalObjectId": "f478d967f9def40f3f5422607027fb025f759d7c",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Data/Room/Miscellaneous",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Data%2FRoom%2FMiscellaneous?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "dd1225780591cf59ca9f4a91f6dd7e5e85c92adb",
+        "originalObjectId": "f6d0325001d95827ef05f010246848b4993869c2",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Data/Room/Miscellaneous/LoadVoucherGameSearchResult.cs",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Data%2FRoom%2FMiscellaneous%2FLoadVoucherGameSearchResult.cs?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "bf113d631b6d522e16ef99bc0a77db794f4ac574",
+        "originalObjectId": "ed88c36fc16a522399c589f82e1ea0225cf63325",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Message",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Message?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "8444c326818e0996c7ae59bc06311ebce40ff572",
+        "originalObjectId": "b39eb2881b461d296f02bf4fdfa64dac30069ed0",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Message/Room",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Message%2FRoom?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "833ee7e4750541bd412c98e9957fc64b5be63a9f",
+        "originalObjectId": "242a39efc7a8d26dc62b237721ee1f92833b07d6",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Message/Room/Vouchers",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Message%2FRoom%2FVouchers?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "be715e75c44827037e6dffd0a4068e1490e31e4c",
+        "originalObjectId": "523656e96345f457c11f9e80d227c9ba05f8d366",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Message/Room/Vouchers/IVoucherGameSearchRequest.cs",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Message%2FRoom%2FVouchers%2FIVoucherGameSearchRequest.cs?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "d340140c0822be400b062520f6d66633fa1fdd34",
+        "originalObjectId": "a332cba0784ec0b87e857278ccde82ceb01a48a8",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Message/Room/Vouchers/IVoucherGameSearchResponse.cs",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Message%2FRoom%2FVouchers%2FIVoucherGameSearchResponse.cs?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "5ed1368ff219defa33f74baad4f63f24b0d60432",
+        "originalObjectId": "25de4042aa4901ffc394350d484534fbd1fb2a0e",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Service",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Service?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "ac5961aa4e6c3a361c85c51a4290b3af97337ae6",
+        "originalObjectId": "bd1ec3d738e4613aa579b525f04857c940b903ed",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Service/Room",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Service%2FRoom?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "9b4a4e3c90f175a933f60ab0ad91d0c8bfdf7f48",
+        "originalObjectId": "fcb8a660836e8852f04932b643db01c4c1f0f00b",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Service/Room/Miscellaneous",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Service%2FRoom%2FMiscellaneous?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "a387706e4ab0acf9dbf892d4327ff8e6b0a33b66",
+        "originalObjectId": "1e3c221b5c85da12833aa7b6a4a702e0424a6c2d",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/Components/MGS.App1.Service/Room/Miscellaneous/VoucherGameSearchWorker.cs",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FComponents%2FMGS.App1.Service%2FRoom%2FMiscellaneous%2FVoucherGameSearchWorker.cs?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "58da21561772ba301fcf97e872a5fc88e75ae923",
+        "originalObjectId": "7664d1f48fa51f63c8773249d8c3f02de6a92820",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/ProtocolBuffers",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FProtocolBuffers?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "288a3595cde467ff61ba6941a179faf7d862218f",
+        "originalObjectId": "516017b1347e571e326591befced928430efe360",
+        "gitObjectType": "tree",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/ProtocolBuffers/src",
+        "isFolder": true,
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FProtocolBuffers%2Fsrc?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "1c8f3e90f858341350e791531472ca30ac5cf153",
+        "originalObjectId": "b863774ff45b3052929e720dfdb2dec159e833d2",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/ProtocolBuffers/src/VoucherGameSearchRequest.cs",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FProtocolBuffers%2Fsrc%2FVoucherGameSearchRequest.cs?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "49e76ade85c5236672da7de17739950fc69df19d",
+        "originalObjectId": "1b47c5946427e4f095fcb0f836be7571a3a56fa6",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/ProtocolBuffers/src/VoucherGameSearchRequest.proto",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FProtocolBuffers%2Fsrc%2FVoucherGameSearchRequest.proto?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "bd568f521c9389ed1efe776f634beb6737cffab9",
+        "originalObjectId": "980eab560ef61ece416bc53a40807bb42a7f29b1",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/ProtocolBuffers/src/VoucherGameSearchResponse.cs",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FProtocolBuffers%2Fsrc%2FVoucherGameSearchResponse.cs?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    },
+    {
+      "item": {
+        "objectId": "42fc9176c934c44802b69f16b1e33c6e4a46e1cf",
+        "originalObjectId": "5d239569ef55fde388cb2acc8327f9210e80f070",
+        "gitObjectType": "blob",
+        "commitId": "cb9eae628ee8685e331670eafe4c400b0387446f",
+        "path": "/Service.App1Host/src/ProtocolBuffers/src/VoucherGameSearchResponse.proto",
+        "url": "http://devadz/DefaultCollection/354e5140-8a36-41a4-bc9f-eecad05cf542/_apis/git/repositories/d0d44a40-9870-4f3f-b754-465626a710c6/items/Service.App1Host%2Fsrc%2FProtocolBuffers%2Fsrc%2FVoucherGameSearchResponse.proto?versionType=Commit&version=cb9eae628ee8685e331670eafe4c400b0387446f"
+      },
+      "changeType": "edit"
+    }
+  ],
+  "commonCommit": "e52b7a9f24befb0131f6d779d0634c6370770290",
+  "baseCommit": "1a3d29db205573d13cdfc0e405a4c9ad9ec5c045",
+  "targetCommit": "cb9eae628ee8685e331670eafe4c400b0387446f",
+  "aheadCount": 3,
+  "behindCount": 2
+}

@@ -1,0 +1,52 @@
+{
+  "id": "addaa918-b826-4b84-b716-7f538809a9b5",
+  "name": "path-filter-gate",
+  "friendlyName": "Path Filter Gate",
+  "description": "Fails the build if the there are no changes in the included file paths",
+  "author": "Kerwin Carpede",
+  "helpMarkDown": "",
+  "category": "Build",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "runsOn": [
+    "Agent"
+  ],
+  "demands": [],
+  "version": {
+    "Major": "0",
+    "Minor": "0",
+    "Patch": "14"
+  },
+  "minimumAgentVersion": "1.91.0",
+  "instanceNameFormat": "Path Filter Gate",
+  "inputs": [
+    {
+      "name": "sourceBranchName",
+      "type": "string",
+      "label": "Source Branch",
+      "defaultValue": "master",
+      "required": true,
+      "helpMarkDown": "Specify the branch to compare file changes"
+    },
+    {
+      "name": "authenticationType",
+      "type": "pickList",
+      "label": "Authentication",
+      "required": "true",
+      "defaultValue": "OAuthToken",
+      "options": {
+        "OAuthToken": "OAuth Token",
+        "WindowsAuthentication": "Windows Authentication"
+      },
+      "helpMarkDown": "Specify the authentication type to use for communicating with the TFS API. Note: For OAuth Token, 'Allow scripts to access OAuth token' must be enabled in the build definition options. If 'Windows Authentication' is selected, this would be the account being used by the Build Agent.",
+      "groupName": "advanced"
+    }
+  ],
+  "execution": {
+    "PowerShell3": {
+      "target": "run.ps1"
+    }
+  }
+}

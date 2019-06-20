@@ -1,0 +1,49 @@
+{
+  "options": [
+    {
+      "enabled": true,
+      "definition": {
+        "id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+      },
+      "inputs": {
+        "branchFilters": "[\"+refs/heads/*\",\"-refs/heads/feature/*\"]",
+        "additionalFields": "{}"
+      }
+    },
+    {
+      "enabled": false,
+      "definition": {
+        "id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+      },
+      "inputs": {
+        "workItemType": "199",
+        "assignToRequestor": "true",
+        "additionalFields": "{}"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "branchFilters": ["+refs/heads/*", "-refs/heads/feature/*"],
+      "pathFilters": ["+/Database", "-/Database.App1/src/App1*"],
+      "batchChanges": true,
+      "maxConcurrentBuildsPerBranch": 1,
+      "pollingInterval": 0,
+      "triggerType": "continuousIntegration"
+    },
+    {
+      "schedules": [
+        {
+          "branchFilters": ["+refs/heads/master"],
+          "timeZoneId": "South Africa Standard Time",
+          "startHours": 1,
+          "startMinutes": 0,
+          "daysToBuild": "friday",
+          "scheduleJobId": "62a3b787-04a7-4032-94c5-6df0fa182505",
+          "scheduleOnlyWithChanges": false
+        }
+      ],
+      "triggerType": "schedule"
+    }
+  ]
+}

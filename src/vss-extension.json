@@ -1,0 +1,80 @@
+{
+  "manifestVersion": 1,
+  "id": "path-filter-gate",
+  "name": "Path Filter Gate",
+  "version": "0.0.14",
+  "publisher": "kerwincarpede",
+  "galleryFlags": [
+    "Private"
+  ],
+  "scopes": [
+    "vso.code",
+    "vso.build_execute"
+  ],
+  "demands": [
+    "api-version/5.0"
+  ],
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/kerwinc/VSTSTasks/tree/master/Tasks/BranchMaker"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Fails the build if the there are no changes in the included file paths",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "tags": [
+    "Path Filter",
+    "Gate",
+    "Build Gate",
+    "Reduce Builds"
+  ],
+  "screenshots": [],
+  "content": {
+    "details": {
+      "path": "overview.md"
+    },
+    "license": {
+      "path": "license.txt"
+    }
+  },
+  "links": {
+    "home": {
+      "uri": "https://github.com/kerwinc/PathFilterGate"
+    },
+    "repository": {
+      "uri": "https://github.com/kerwinc/PathFilterGate"
+    },
+    "issues": {
+      "uri": "https://github.com/kerwinc/PathFilterGate/issues"
+    }
+  },
+  "branding": {
+    "color": "#3b3b98",
+    "theme": "dark"
+  },
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "files": [
+    {
+      "path": "V1"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "path-filter-gate",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Task"
+      }
+    }
+  ]
+}
