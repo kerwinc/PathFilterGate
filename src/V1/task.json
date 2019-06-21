@@ -17,15 +17,15 @@
   "version": {
     "Major": "0",
     "Minor": "0",
-    "Patch": "14"
+    "Patch": "29"
   },
   "minimumAgentVersion": "1.91.0",
   "instanceNameFormat": "Path Filter Gate",
   "inputs": [
     {
-      "name": "sourceBranchName",
+      "name": "sourceCompareBranchName",
       "type": "string",
-      "label": "Source Branch",
+      "label": "Source Compare Branch",
       "defaultValue": "master",
       "required": true,
       "helpMarkDown": "Specify the branch to compare file changes"

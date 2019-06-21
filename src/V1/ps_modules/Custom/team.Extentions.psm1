@@ -130,7 +130,25 @@ Function Get-BranchDiff {
     [Parameter(Mandatory = $true)][string]$TargetBranch
   )
   Process {
-    $url = "$ProjectCollectionUri/$ProjectName/_apis/git/repositories/$Repository/diffs/commits?baseVersion=$BaseBranch&&targetVersion=$TargetBranch&api-version=5.0"
+    $url = "$ProjectCollectionUri/$ProjectName/_apis/git/repositories/$Repository/diffs/commits?baseVersion=$BaseBranch&targetVersion=$TargetBranch&api-version=5.0"
+    $response = Invoke-GetCommand -Url $Url
+    return $response
+  }
+}
+
+Function Get-BuildDefinition {
+  [CmdletBinding()]
+  param(
+    [Parameter()][string]$ProjectCollectionUri = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI,
+    [Parameter()][string]$ProjectName = $env:SYSTEM_TEAMPROJECT,
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $true)][int]$DefinitionId
+  )
+  Process {
+    if ($ProjectCollectionUri.EndsWith("/")) {
+      $ProjectCollectionUri = $ProjectCollectionUri.Remove($ProjectCollectionUri.Length - 1)
+    }
+    $url = "{0}/{1}/_apis/build/definitions/{2}?api-version=5.0" -f $ProjectCollectionUri, $ProjectName, $DefinitionId
     $response = Invoke-GetCommand -Url $Url
     return $response
   }
