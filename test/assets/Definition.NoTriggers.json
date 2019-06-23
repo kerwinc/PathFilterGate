@@ -1,0 +1,171 @@
+{
+    "options": [
+        {
+            "enabled": false,
+            "definition": {
+                "id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+            },
+            "inputs": {
+                "branchFilters": "[\"+refs/heads/*\"]",
+                "additionalFields": "{}"
+            }
+        },
+        {
+            "enabled": false,
+            "definition": {
+                "id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+            },
+            "inputs": {
+                "workItemType": "1",
+                "assignToRequestor": "true",
+                "additionalFields": "{}"
+            }
+        }
+    ],
+    "variables": {
+        "system.debug": {
+            "value": "false",
+            "allowOverride": true
+        }
+    },
+    "retentionRules": [
+        {
+            "branches": [
+                "+refs/heads/*"
+            ],
+            "artifacts": [],
+            "artifactTypesToDelete": [
+                "FilePath",
+                "SymbolStore"
+            ],
+            "daysToKeep": 10,
+            "minimumToKeep": 1,
+            "deleteBuildRecord": true,
+            "deleteTestResults": true
+        }
+    ],
+    "properties": {},
+    "tags": [],
+    "_links": {
+        "self": {
+            "href": "http://devads/DefaultCollection/86e0506e-042c-4419-aa3b-02991bb50f07/_apis/build/Definitions/3?revision=2"
+        },
+        "web": {
+            "href": "http://devads/DefaultCollection/86e0506e-042c-4419-aa3b-02991bb50f07/_build/definition?definitionId=3"
+        },
+        "editor": {
+            "href": "http://devads/DefaultCollection/86e0506e-042c-4419-aa3b-02991bb50f07/_build/designer?id=3&_a=edit-build-definition"
+        },
+        "badge": {
+            "href": "http://devads/DefaultCollection/86e0506e-042c-4419-aa3b-02991bb50f07/_apis/build/status/3"
+        }
+    },
+    "jobAuthorizationScope": "projectCollection",
+    "jobTimeoutInMinutes": 60,
+    "jobCancelTimeoutInMinutes": 5,
+    "process": {
+        "phases": [
+            {
+                "steps": [
+                    {
+                        "environment": {},
+                        "enabled": true,
+                        "continueOnError": false,
+                        "alwaysRun": false,
+                        "displayName": "Path Filter Gate",
+                        "timeoutInMinutes": 0,
+                        "condition": "succeeded()",
+                        "task": {
+                            "id": "addaa918-b826-4b84-b716-7f538809a9b5",
+                            "versionSpec": "0.*",
+                            "definitionType": "task"
+                        },
+                        "inputs": {
+                            "sourceCompareBranchName": "master",
+                            "authenticationType": "OAuthToken"
+                        }
+                    }
+                ],
+                "name": "Only Job",
+                "refName": "Phase_1",
+                "condition": "succeeded()",
+                "target": {
+                    "executionOptions": {
+                        "type": 0
+                    },
+                    "allowScriptsAuthAccessOption": true,
+                    "type": 1
+                },
+                "jobAuthorizationScope": "projectCollection",
+                "jobCancelTimeoutInMinutes": 1
+            }
+        ],
+        "type": 1
+    },
+    "repository": {
+        "properties": {
+            "cleanOptions": "0",
+            "labelSources": "0",
+            "labelSourcesFormat": "$(build.buildNumber)",
+            "reportBuildStatus": "true",
+            "gitLfsSupport": "false",
+            "skipSyncSource": "false",
+            "checkoutNestedSubmodules": "false",
+            "fetchDepth": "0"
+        },
+        "id": "9df020d4-556f-4c93-a811-381c43e19ec8",
+        "type": "TfsGit",
+        "name": "Playground",
+        "url": "http://devads/DefaultCollection/Playground/_git/Playground",
+        "defaultBranch": "refs/heads/master",
+        "clean": "false",
+        "checkoutSubmodules": false
+    },
+    "processParameters": {},
+    "quality": "definition",
+    "authoredBy": {
+        "displayName": "Kerwin Carpede",
+        "url": "http://devads/DefaultCollection/_apis/Identities/e818e63c-a34f-4df9-ba3a-e11dd31a405a",
+        "_links": {
+            "avatar": {
+                "href": "http://devads/DefaultCollection/_apis/GraphProfile/MemberAvatars/win.Uy0xLTUtMjEtMjgwNzU3MTM0OC05NzA3MTk4MTAtNDg5MTE1MjE1LTExMDg"
+            }
+        },
+        "id": "e818e63c-a34f-4df9-ba3a-e11dd31a405a",
+        "uniqueName": "DEVIT\\kerwinc",
+        "imageUrl": "http://devads/DefaultCollection/_api/_common/identityImage?id=e818e63c-a34f-4df9-ba3a-e11dd31a405a",
+        "descriptor": "win.Uy0xLTUtMjEtMjgwNzU3MTM0OC05NzA3MTk4MTAtNDg5MTE1MjE1LTExMDg"
+    },
+    "drafts": [],
+    "queue": {
+        "_links": {
+            "self": {
+                "href": "http://devads/DefaultCollection/_apis/build/Queues/1"
+            }
+        },
+        "id": 1,
+        "name": "Default",
+        "url": "http://devads/DefaultCollection/_apis/build/Queues/1",
+        "pool": {
+            "id": 1,
+            "name": "Default"
+        }
+    },
+    "id": 3,
+    "name": "Path Filter Gate Test Build",
+    "url": "http://devads/DefaultCollection/86e0506e-042c-4419-aa3b-02991bb50f07/_apis/build/Definitions/3?revision=2",
+    "uri": "vstfs:///Build/Definition/3",
+    "path": "\\",
+    "type": "build",
+    "queueStatus": "enabled",
+    "revision": 2,
+    "createdDate": "2019-06-22T07:37:43.693Z",
+    "project": {
+        "id": "86e0506e-042c-4419-aa3b-02991bb50f07",
+        "name": "Playground",
+        "url": "http://devads/DefaultCollection/_apis/projects/86e0506e-042c-4419-aa3b-02991bb50f07",
+        "state": "wellFormed",
+        "revision": 9,
+        "visibility": "private"
+    }
+}

@@ -154,6 +154,22 @@ Function Get-BuildDefinition {
   }
 }
 
+Function Get-BuildDefinitionPathFilters {
+  [CmdletBinding()]
+  param(
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $true)][System.Object]$Definition
+  )
+  Process {
+    [string[]]$pathFilers = @()
+    if($Definition -and $Definition.triggers) { 
+      
+    }
+    return $pathFilers
+  }
+}
+
+
 Function Get-PullRequests {
   [CmdletBinding()]
   param(
