@@ -162,8 +162,12 @@ Function Get-BuildDefinitionPathFilters {
   )
   Process {
     [string[]]$pathFilers = @()
-    if($Definition -and $Definition.triggers) { 
-      
+    if ($Definition -and $Definition.triggers -and $Definition.triggers.Length -gt 0) {
+      foreach ($trigger in $Definition.triggers) { 
+        if ($trigger.pathFilters -and $trigger.pathFilters.Length -gt 0) { 
+          return $trigger.pathFilters
+        }
+      }
     }
     return $pathFilers
   }

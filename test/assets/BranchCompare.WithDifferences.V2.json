@@ -1,0 +1,22 @@
+{
+  "allChangesIncluded": true,
+  "changeCounts": { "Edit": 1 },
+  "changes": [
+    {
+      "item": {
+        "objectId": "f1c0a597214141a33e46eb7d6320725352f7176b",
+        "originalObjectId": "a4579b63a5cf68ca6a95937d56f15bac47a4f768",
+        "gitObjectType": "blob",
+        "commitId": "7dc15e774288e758aa5ace8bef75fc6026cc330b",
+        "path": "/README.md",
+        "url": "http://devads/DefaultCollection/86e0506e-042c-4419-aa3b-02991bb50f07/_apis/git/repositories/9df020d4-556f-4c93-a811-381c43e19ec8/items/README.md?versionType=Commit&version=7dc15e774288e758aa5ace8bef75fc6026cc330b"
+      },
+      "changeType": "edit"
+    }
+  ],
+  "commonCommit": "142bfddacba298f19d7c00719332fb732a796785",
+  "baseCommit": "142bfddacba298f19d7c00719332fb732a796785",
+  "targetCommit": "7dc15e774288e758aa5ace8bef75fc6026cc330b",
+  "aheadCount": 1,
+  "behindCount": 0
+}

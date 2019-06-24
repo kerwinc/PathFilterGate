@@ -7,6 +7,10 @@ Function Get-PathFilterChanges {
   Process {
     $changes = @()
 
+    if (($PathFilters | Where-Object { $_.StartsWith("+") }).Count -eq 0) {
+      $PathFilters += "+/*"
+    }
+
     foreach ($filter in $PathFilters | Where-Object { $_.StartsWith("+") }) {
       $filter = $filter.Replace("+", "")
       if (!$filter.EndsWith("*")) {
@@ -19,11 +23,14 @@ Function Get-PathFilterChanges {
     $exclusions = @()
     foreach ($filter in $PathFilters | Where-Object { $_.StartsWith("-") }) {
       $filter = $filter.Replace("-", "")
+      if (!$filter.EndsWith("*")) {
+        $filter = $filter + "*"
+      }
       Write-Verbose "Filtering for path exclution: [$filter]"
       $exclusions += ($changes | Where-Object { $_.path -like $filter })
     }
 
-    $result = $changes | Where-Object { $exclusions -notcontains $_ }
+    [object[]]$result = $changes | Where-Object { $exclusions -notcontains $_ }
     return $result
   }
 }

@@ -5,5 +5,8 @@ $currentDirectory = Split-Path -Parent $MyInvocation.MyCommand.Path
 Write-Host "Importing Required Modules"
 Import-Module -Name Pester
 
-Write-Host "Running Pester Tests"
+Write-Host "Running PathFilterRules Pester Tests"
 Invoke-Pester -Script "$currentDirectory\PathFilterModuleTests.ps1"
+
+# Write-Host "Running Team Extensions Pester Tests"
+# Invoke-Pester -Script "$currentDirectory\TeamExtensionsModuleTests.ps1"

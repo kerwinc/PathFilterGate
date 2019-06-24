@@ -6,6 +6,7 @@ $modulesPath = Join-Path $sourcePath "ps_modules\Custom"
 
 Write-Host " Importing module from $modulesPath\$sut.psm1"
 Import-Module "$modulesPath\$sut.psm1" -Force -DisableNameChecking
+Import-Module "$modulesPath\team.Extentions.psm1" -Force -DisableNameChecking
 
 Describe "PathFilterRules Module Tests" {
 
@@ -23,40 +24,29 @@ Describe "PathFilterRules Module Tests" {
     }
   }
 
-  # Context "Branch Compare with no differences" {
+  Context "Branch Compare with no differences" {
 
-  #   $branchCompare = Get-Content "$assetsPath\BranchCompare.NoDifferences.json" | Out-String | ConvertFrom-Json
-  #   $Definition = Get-Content "$assetsPath\Definition.WithPathFilters.json" | Out-String | ConvertFrom-Json
-  #   $pathFilters = $Definition.triggers[0].pathFilters
-
-  #   $result = Get-PathFilterChanges -BranchCompare $branchCompare -PathFilters $pathFilters
-
-  #   It "Should return 0 - no differences" {
-  #     $result.Count | Should Be 0
-  #   }
-  # }
-
-  # Context "Branch Compare with file differences" {
-
-  #   $branchCompare = Get-Content "$assetsPath\BranchCompare.WithDifferences.json" | Out-String | ConvertFrom-Json
-  #   $buildFefinition = Get-Content "$assetsPath\Definition.WithPathFilters.json" | Out-String | ConvertFrom-Json
-  #   $pathFilters = $buildFefinition.triggers[0].pathFilters
-
-  #   $result = Get-PathFilterChanges -BranchCompare $branchCompare -PathFilters $pathFilters
-
-  #   It "Should return 2 differences" {
-  #     $result.Count | Should Be 2
-  #   }
-  # }
-
-  Context "Extract Path Filter Tests" {
-    $buildFefinition = Get-Content "$assetsPath\Definition.NoTriggers.json" | Out-String | ConvertFrom-Json
-    $pathFilters = $buildFefinition.triggers[0].pathFilters
+    $branchCompare = Get-Content "$assetsPath\BranchCompare.NoDifferences.json" | Out-String | ConvertFrom-Json
+    $Definition = Get-Content "$assetsPath\Definition.WithPathFilters.json" | Out-String | ConvertFrom-Json
+    $pathFilters = $Definition.triggers[0].pathFilters
 
     $result = Get-PathFilterChanges -BranchCompare $branchCompare -PathFilters $pathFilters
 
+    It "Should return 0 - no differences" {
+      $result.Count | Should Be 0
+    }
+  }
+
+  Context "Branch Compare with file differences" {
+
+    $branchCompare = Get-Content "$assetsPath\BranchCompare.WithDifferences.V2.json" | Out-String | ConvertFrom-Json
+    $Definition = Get-Content "$assetsPath\Definition.WithPathFilters.json" | Out-String | ConvertFrom-Json
+    [String[]]$pathFilters = @("-/docs")
+
+    [object[]]$result = Get-PathFilterChanges -BranchCompare $branchCompare -PathFilters $pathFilters
+
     It "Should return 2 differences" {
-      $result.Count | Should Be 2
+      $result.Length | Should Be 1
     }
   }
 
