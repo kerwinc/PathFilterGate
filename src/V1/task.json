@@ -17,7 +17,7 @@
   "version": {
     "Major": "0",
     "Minor": "0",
-    "Patch": "56"
+    "Patch": "68"
   },
   "minimumAgentVersion": "1.91.0",
   "instanceNameFormat": "Path Filter Gate",
@@ -29,6 +29,14 @@
       "defaultValue": "master",
       "required": true,
       "helpMarkDown": "Specify the branch to compare file changes"
+    },
+    {
+      "name": "cancelBuildOnFailure",
+      "type": "boolean",
+      "label": "Cancel Build On Failure",
+      "defaultValue": "true",
+      "required": false,
+      "helpMarkDown": "Turning this on will cancel the current build if there are no changes detected after the filters are applied."
     },
     {
       "name": "authenticationType",

@@ -16,7 +16,8 @@ $env:TEAM_AuthType = Get-VstsInput -Name "authenticationType" -Require
 $env:TEAM_PAT = $env:SYSTEM_ACCESSTOKEN
 
 $task = New-Object psobject -Property @{
-  SourceBranchName = Get-VstsInput -Name "sourceCompareBranchName" -Require
+  SourceBranchName     = Get-VstsInput -Name "sourceCompareBranchName" -Require
+  CancelBuildOnFailure = [System.Convert]::ToBoolean((Get-VstsInput -Name "cancelBuildOnFailure" -Require))
 }
 
 $task.SourceBranchName = $($task.SourceBranchName).Replace("refs/heads/", "")
@@ -62,10 +63,15 @@ if ($branchCompare -and $branchCompare.changes.Count -gt 0 -and $pathFilters.len
   }
 }
 
-if ($pathFilters.length -gt 0 -and $result -eq $true) { 
+if ($pathFilters.length -gt 0 -and $result -eq $true) {
   Write-Output "Passed the path filter gate..."
 }
 else { 
+  if ($task.CancelBuildOnFailure -eq $true) {
+    Write-Output "Cancelling the build."
+    Update-BuildStatus -BuildId $BuildId -Status "cancelling" -Verbose
+  }
+  
   Write-Error "There were no changes. Failed branch filter"
 }
 

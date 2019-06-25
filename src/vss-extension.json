@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "path-filter-gate",
   "name": "Path Filter Gate",
-  "version": "0.0.56",
+  "version": "0.0.68",
   "publisher": "kerwincarpede",
   "galleryFlags": [
     "Private"

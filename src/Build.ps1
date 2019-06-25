@@ -34,7 +34,8 @@ Write-Host "Current Version: $($currentExtensionVersion)"
 Write-Host "New Version: $newVersionNumber"
 
 # tfx login --service-url "http://devads/DefaultCollection" --authType pat --token "dk26fcbmrkf6nq4tkiedm3fopdegscheeb257ufoc7uzrwp67yra"
-tfx login --service-url "http://devads/DefaultCollection" --authType pat --token "2vdfrhez7iyjy64yrep7eldqcqlijh5f6z23o5pvv4yj3x7g6imq"
+# tfx login --service-url "http://devads/DefaultCollection" --authType pat --token "2vdfrhez7iyjy64yrep7eldqcqlijh5f6z23o5pvv4yj3x7g6imq"
+tfx login --service-url "http://azuredevops/BingoCollection" --authType pat --token "qcgcrwrskldtxygrke57hwzcuyx77zqoagouudn53hwoupa2auuq"
 
 Write-Host $vssExtensionFilePath
 Write-Host $distPath

@@ -48,6 +48,60 @@ function Invoke-PostCommand {
   }
 }
 
+function Invoke-PatchCommand {
+  [CmdletBinding()]
+  param(
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $true)][string]$Url,
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $true)][string]$Body
+  )
+  Process {
+    Write-Verbose "Executing Request [$Url] using Auth Type: [$env:TEAM_AUTHTYPE]"
+    if ($env:TEAM_AUTHTYPE -eq "WindowsAuthentication" ) {
+      $response = Invoke-RestMethod -Uri $Url -Method Patch -ContentType "application/json" -Body $body -UseDefaultCredentials
+      $response | ConvertTo-Json | Write-Verbose
+      return $response
+    }
+    elseif ($env:TEAM_AUTHTYPE -eq "Basic" ) {
+      $response = Invoke-RestMethod -Uri $Url -Method Patch -ContentType "application/json" -Body $body -Headers @{Authorization = "Basic $env:TEAM_PAT" }
+      $response | ConvertTo-Json | Write-Verbose
+      return $response
+    }
+    else {
+      $response = Invoke-RestMethod -Uri $Url -Method Patch -ContentType "application/json" -Body $body -Headers @{Authorization = "Bearer $env:TEAM_PAT" }
+      $response | ConvertTo-Json | Write-Verbose
+      return $response
+    }
+  }
+}
+
+function Invoke-DeleteCommand {
+  [CmdletBinding()]
+  param(
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $true)][string]$Url
+  )
+  Process {
+    Write-Verbose "Executing Request [$Url] using Auth Type: [$env:TEAM_AUTHTYPE]"
+    if ($env:TEAM_AUTHTYPE -eq "WindowsAuthentication" ) {
+      $response = Invoke-RestMethod -Uri $Url -Method Delete -ContentType "application/json" -UseDefaultCredentials
+      $response | ConvertTo-Json | Write-Verbose
+      return $response
+    }
+    elseif ($env:TEAM_AUTHTYPE -eq "Basic" ) {
+      $response = Invoke-RestMethod -Uri $Url -Method Delete -ContentType "application/json" -Headers @{Authorization = "Basic $env:TEAM_PAT" }
+      $response | ConvertTo-Json | Write-Verbose
+      return $response
+    }
+    else {
+      $response = Invoke-RestMethod -Uri $Url -Method Delete -ContentType "application/json" -Headers @{Authorization = "Bearer $env:TEAM_PAT" }
+      $response | ConvertTo-Json | Write-Verbose
+      return $response
+    }
+  }
+}
+
 Function Get-Repository {
   [CmdletBinding()]
   param(
@@ -150,6 +204,41 @@ Function Get-BuildDefinition {
     }
     $url = "{0}/{1}/_apis/build/definitions/{2}?api-version=5.0" -f $ProjectCollectionUri, $ProjectName, $DefinitionId
     $response = Invoke-GetCommand -Url $Url
+    return $response
+  }
+}
+
+Function Remove-Build {
+  [CmdletBinding()]
+  param(
+    [Parameter()][string]$ProjectCollectionUri = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI,
+    [Parameter()][string]$ProjectName = $env:SYSTEM_TEAMPROJECT,
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $true)][int]$BuildId
+  )
+  Process {
+    $url = "{0}/{1}/_apis/build/builds/{2}?api-version=5.0" -f $ProjectCollectionUri, $ProjectName, $BuildId
+    Write-Verbose "Deleting Build: [$BuildId]"
+    $response = Invoke-DeleteCommand -Url $url -Verbose
+    return $response
+  }
+}
+
+Function Update-BuildStatus {
+  [CmdletBinding()]
+  param(
+    [Parameter()][string]$ProjectCollectionUri = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI,
+    [Parameter()][string]$ProjectName = $env:SYSTEM_TEAMPROJECT,
+    [ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $true)][int]$BuildId,
+    [ValidateSet("cancelling")]
+    [Parameter(Mandatory = $true)][string]$Status
+  )
+  Process {
+    $url = "{0}/{1}/_apis/build/builds/{2}?api-version=5.0" -f $ProjectCollectionUri, $ProjectName, $BuildId
+    $body = ConvertTo-Json @{status = "$Status" }
+    Write-Verbose "Updating Build Status: [$BuildId] to [$Status]"
+    $response = Invoke-PatchCommand -Url $url -Verbose -Body $body
     return $response
   }
 }
