@@ -184,7 +184,7 @@ Function Get-BranchDiff {
     [Parameter(Mandatory = $true)][string]$TargetBranch
   )
   Process {
-    $url = "$ProjectCollectionUri/$ProjectName/_apis/git/repositories/$Repository/diffs/commits?baseVersion=$BaseBranch&targetVersion=$TargetBranch&api-version=5.0"
+    $url = "$ProjectCollectionUri/$ProjectName/_apis/git/repositories/$Repository/diffs/commits?baseVersion=$BaseBranch&targetVersion=$TargetBranch&api-version=5.0" + '&$top=10000'
     $response = Invoke-GetCommand -Url $Url
     return $response
   }
